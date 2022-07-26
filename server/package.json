@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for AniOke",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Malay Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lyrics-finder": "^21.7.0",
+    "spotify-web-api-node": "^5.0.2",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

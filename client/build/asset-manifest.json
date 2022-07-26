@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.398b30db.css",
+    "main.js": "/static/js/main.ac17eb3c.js",
+    "static/media/Spotify_X_Anioke_1.png": "/static/media/Spotify_X_Anioke_1.71412f260715fcfd96ed.png",
+    "static/media/logo_1.png": "/static/media/logo_1.51300e89c15ab5de74e6.png",
+    "index.html": "/index.html",
+    "main.398b30db.css.map": "/static/css/main.398b30db.css.map",
+    "main.ac17eb3c.js.map": "/static/js/main.ac17eb3c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.398b30db.css",
+    "static/js/main.ac17eb3c.js"
+  ]
+}
