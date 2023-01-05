@@ -12,6 +12,7 @@ export const initialState = {
   playing: false,
   item: null,
   searchResults: [],
+  lyrics: null,
 };
 
 const reducer = (state, action) => {
@@ -57,7 +58,11 @@ const reducer = (state, action) => {
         ...state,
         searchResults: action.searchResults,
       };
-
+    case "SET_LYRICS":
+      return {
+        ...state,
+        lyrics: action.lyrics,
+      };
     default:
       return state;
   }

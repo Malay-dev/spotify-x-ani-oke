@@ -43,8 +43,8 @@ export default function Dashboard({ code }) {
     setLyrics("");
   }
 
-  const flask_url = "https://ani-oke-flask-server.herokuapp.com";
-  // http://127.0.0.1:5000
+  const flask_url = "http://127.0.0.1:5000"; //https://ani-oke-flask-server.herokuapp.com
+  //
   var htmlObject = document.createElement("div");
   useEffect(() => {
     if (!token) return;
@@ -53,7 +53,8 @@ export default function Dashboard({ code }) {
   useEffect(() => {
     console.log(playingTrack);
     if (!playingTrack) return;
-    fetch(`${flask_url}/getdata/${playingTrack.title}`)
+    const tmp = playingTrack.title + playingTrack.artist;
+    fetch(`${flask_url}/getdata/${tmp}`)
       .then(function (response) {
         return response.json();
       })
