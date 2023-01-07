@@ -43,7 +43,7 @@ export default function Dashboard({ code }) {
     setLyrics("");
   }
 
-  const flask_url = "http://65.2.35.79:5000";
+  const flask_url = "https://ani-oke-flask-server.onrender.com/";
 
   var htmlObject = document.createElement("div");
   useEffect(() => {
