@@ -6,7 +6,7 @@ export default function useAuth(code) {
   const [refreshToken, setRefreshToken] = useState();
   const [expiresIn, setExpiresIn] = useState();
 
-  const url = "http://65.2.35.79:8080"; 
+  const url = "https://ani-oke-node-server.onrender.com";
 
   useEffect(() => {
     axios
