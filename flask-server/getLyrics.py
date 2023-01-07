@@ -1,7 +1,7 @@
 import re
 from bs4 import BeautifulSoup
 from urllib.request import urlopen, Request
-
+import requests
 """---------------------------------------------"""
 # Google Search for required urls
 
@@ -52,8 +52,8 @@ class TooManyRequests(Exception):
 
 
 def _searchLyrics_(query):
-    for url in search(f"site:lyrical-nonsense.com {query}", num_results=5):
-        if "lyrical-nonsense" in str(url):
+    for url in search(f"site:genius.com {query}", num_results=5):
+        if "genius" in str(url):
             return url
 
 
@@ -65,20 +65,22 @@ class GetLyrics:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3"
         }
-
-        req = Request(url=url, headers=headers)
-        lyrics_page = urlopen(req).read()
-        soup = BeautifulSoup(lyrics_page, "html.parser")
-        self.url = _searchLyrics_(query)
+        r = requests.get(url=url)
+        # req = Request(url=url, headers=headers)
+        # lyrics_page = urlopen(req).read()
+        soup = BeautifulSoup(r.text, "html.parser")
+        # print(soup)
+        # self.url = _searchLyrics_(query)
         self._soup = soup
 
     def _lyricsType_(self, div):
         lyrics_container = self._soup.find("div", {"class": div})
+        print(lyrics_container)
         data = ""
         for child in lyrics_container.children:
             data = data + str(re.sub("\n", "", str(child)))
         return data
 
     def romaji(self) -> str:
-        romaji_lyrics = self._lyricsType_("olyrictext")
+        romaji_lyrics = self._lyricsType_("Lyrics__Container-sc-1ynbvzw-6")
         return romaji_lyrics
