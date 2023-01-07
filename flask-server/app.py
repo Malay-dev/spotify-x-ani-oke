@@ -4,10 +4,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask import request, jsonify
 
-# imports for lyrics from animelyrics.com
-import re
-from bs4 import BeautifulSoup
-from urllib.request import urlopen, Request
+
 import getLyrics
 
 app = Flask(__name__)
