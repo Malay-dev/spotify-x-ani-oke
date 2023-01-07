@@ -1,6 +1,6 @@
 const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "http://localhost:3000"; //https://ani-oke.netlify.app
+const redirectUri = "https://ani-oke.netlify.app"; //https://ani-oke.netlify.app
 const clientId = "c0f037a261fd4f649bc7ca1338b5a3e0";
 
 const scopes = [
