@@ -6,7 +6,7 @@ export default function useAuth(code) {
   const [refreshToken, setRefreshToken] = useState();
   const [expiresIn, setExpiresIn] = useState();
 
-  const url = "http://localhost:3001"; //https://ani-oke-server.herokuapp.com
+  const url = "http://65.2.35.79:8080"; //https://ani-oke-server.herokuapp.com
   //
 
   useEffect(() => {

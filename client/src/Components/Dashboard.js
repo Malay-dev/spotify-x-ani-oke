@@ -43,8 +43,8 @@ export default function Dashboard({ code }) {
     setLyrics("");
   }
 
-  const flask_url = "http://127.0.0.1:5000"; //https://ani-oke-flask-server.herokuapp.com
-  //
+  const flask_url = "http://65.2.35.79:5000"; //https://ani-oke-flask-server.herokuapp.com
+
   var htmlObject = document.createElement("div");
   useEffect(() => {
     if (!token) return;
