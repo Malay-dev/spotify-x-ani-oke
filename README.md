@@ -164,7 +164,7 @@ Distributed under the GNU License. See `LICENSE.txt` for more information.
 Utsav Yadav - [@Yadavutsav3](https://twitter.com/Yadavutsav3)
 Malay Kumar - [@void_MalayK](https://twitter.com/void_MalayK)
 <p align="center">NOTE: To enjoy the demo link please contact above for required permissions.</p>
-Project Link: [https://github.com/Malay-dev/spotify-x-ani-oke](https://github.com/Malay-dev/spotify-x-ani-oke)
+Project Link: https://github.com/Malay-dev/spotify-x-ani-oke
 
 <p align="right"><a href="#readme-top">back to top</a>)</p>
 
