@@ -87,7 +87,7 @@ python -m pip install --upgrade pip.
 ```
 ### Installation
 
-_Below are the instructions to setup the project locally , don't forget to Cd to the respective folders mentioned._
+_Below are the instructions to setup the project locally , don't forget to cd to the respective folders mentioned._
 
 1. Create a Spotify Developer Account, and generate the Client Secret and Client ID then Set Redirect URI - http://localhost:3000
 2. Clone the repo
